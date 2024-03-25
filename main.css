@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+#slider {
+    width: 100%;
+    aspect-ratio: 1000/350;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_imgs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.pag_circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #adadad;
+    cursor: pointer;
+}
+
+.pag_circle:hover {
+    background-color: #707070;
+}
+
+.active {
+    background-color: #707070;
+}
+
+.img {
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.right {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(100% - 70px);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.img_title {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 84px);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img_number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
